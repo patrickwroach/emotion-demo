@@ -1,0 +1,81 @@
+html,
+body,
+#root {
+    padding:0;
+    margin:0;
+    height:100%;
+    font-size: 0;
+}
+
+.transition-wrapper {
+    display: flex;
+    align-items: center;
+    width:100%;
+    height:100%;
+    list-style-type: none;
+    padding:0;
+    padding-inline-start: 0px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    white-space: nowrap;
+}
+.col {
+    background:black;
+	animation-name: pullUp;
+	-webkit-animation-name: pullUp;	
+	flex: 1 0 auto;
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease-out;	
+
+	transform-origin: 50%;
+	-ms-transform-origin: 50%;
+	-webkit-transform-origin: 50%;		
+}
+
+@keyframes pullUp {
+	0% {
+		transform: scaleY(0.1);
+	}
+	40% {
+		transform: scaleY(1.02);
+	}
+	60% {
+		transform: scaleY(0.98);
+	}
+	80% {
+		transform: scaleY(1.01);
+	}
+	100% {
+		transform: scaleY(0.98);
+	}				
+	80% {
+		transform: scaleY(1.01);
+	}
+	100% {
+		transform: scaleY(1);
+	}							
+}
+
+@-webkit-keyframes pullUp {
+	0% {
+		-webkit-transform: scaleY(0.1);
+	}
+	40% {
+		-webkit-transform: scaleY(1.02);
+	}
+	60% {
+		-webkit-transform: scaleY(0.98);
+	}
+	80% {
+		-webkit-transform: scaleY(1.01);
+	}
+	100% {
+		-webkit-transform: scaleY(0.98);
+	}				
+	80% {
+		-webkit-transform: scaleY(1.01);
+	}
+	100% {
+		-webkit-transform: scaleY(1);
+	}		
+}
